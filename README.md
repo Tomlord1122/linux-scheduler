@@ -932,6 +932,11 @@ mlq.c 相關之 function pointer array 宣告以及實作
 obj-y += idle.o fair.o rt.o mlq.o deadline.o 
 ```
 
+Turn off some flag -> CONFIG_SMP
+```bash
+vim .config
+```
+
 ```bash
 git diff > mlq_schduler.patch
 
