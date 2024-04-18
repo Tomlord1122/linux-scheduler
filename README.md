@@ -6,7 +6,7 @@ New Scheduler class utilize the Multilevel Queue (MLQ) algorithm. This Scheduler
 
 - Scheduler class name: `sched_mlq_class`
 - Scheduler policy: `SCHED_MLQ`
-- The Priority expected to be higher than `**sched_fair_class**` but lower than `**sched_rt_class**` .
+- The Priority expected to be higher than `sched_fair_class` but lower than `sched_rt_class` .
 
 ---
 
@@ -16,7 +16,7 @@ New Scheduler class utilize the Multilevel Queue (MLQ) algorithm. This Scheduler
 2. Queue2: RR policy → 100 ms
 3. Queue3: FIFO policy
 
-要使用`**sched_setscheduler()`** system call 來設定 `SCHED_MLQ` policy
+要使用`sched_setscheduler()` system call 來設定 `SCHED_MLQ` policy
 
 **You should not change the default scheduling policy for init and kernel threads. The only way to alter a task's priority is through invoking the sched_setparam() function. Otherwise, a task's priority must remain unchanged.**
 
